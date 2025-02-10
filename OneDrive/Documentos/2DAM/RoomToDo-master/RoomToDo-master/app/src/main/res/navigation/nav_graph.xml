@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentListaTarea">
+
+    <fragment
+        android:id="@+id/fragmentListaTarea"
+        android:name="com.example.room.UI.FragmentListaTarea"
+        android:label="Lista de Tareas"
+        tools:layout="@layout/fragment_lista_tarea" />
+
+    <fragment
+        android:id="@+id/fragmentBusqueda"
+        android:name="com.example.room.UI.FragmentBusqueda"
+        android:label="Búsqueda de Tareas"
+        tools:layout="@layout/fragment_busqueda" />
+
+    <fragment
+        android:id="@+id/fragmentAgregarTarea"
+        android:name="com.example.room.UI.FragmentAgregarTarea"
+        android:label="FragmentAgregarTarea"
+        tools:layout="@layout/fragment_agregar_tarea" />
+
+    <fragment
+        android:id="@+id/fragmentDetalleTarea"
+        android:name="com.example.room.UI.FragmentDetalleTarea"
+        android:label="Detalle de la Reseña"
+        tools:layout="@layout/fragment_detalle_tarea" />
+</navigation>
