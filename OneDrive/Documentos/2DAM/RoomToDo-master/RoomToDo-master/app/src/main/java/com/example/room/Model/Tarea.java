@@ -17,6 +17,7 @@ public class Tarea implements java.io.Serializable {
     private byte[] imagen;
 
 
+
     public Tarea(String nombre, String descripcion, Date fecha, byte[] imagen) {
         this.nombre = nombre;
         this.descripcion = descripcion;

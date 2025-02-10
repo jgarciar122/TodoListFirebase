@@ -10,11 +10,12 @@ import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.room.databinding.ActivityMainBinding;
 import com.google.android.material.navigation.NavigationBarView;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
 
     ActivityMainBinding binding;
-
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         setSupportActionBar(binding.toolbar);
 
+        mAuth = FirebaseAuth.getInstance();
 
         NavHostFragment navHostFragment = (NavHostFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.nav_host_fragment);
@@ -45,4 +47,7 @@ public class MainActivity extends AppCompatActivity {
 
         binding.bottomNavigation.setSelectedItemId(R.id.fragmentListaTarea); // Por defecto
     }
+
+
+
 }

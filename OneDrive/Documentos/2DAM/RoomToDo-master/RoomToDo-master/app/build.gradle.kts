@@ -1,7 +1,6 @@
 plugins {
     alias(libs.plugins.android.application)
-    id("com.google.gms.google-services") version "4.4.2" apply false
-
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -10,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.room"
-        minSdk = 24
+        minSdk = 28
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -44,6 +43,7 @@ dependencies {
     implementation(libs.constraintlayout)
     implementation(libs.navigation.runtime)
     implementation(libs.navigation.fragment)
+    implementation(libs.firebase.auth)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
@@ -58,6 +58,7 @@ dependencies {
     // RecyclerView
     implementation ("androidx.recyclerview:recyclerview:1.3.2")
 
-    implementation ("com.google.firebase:firebase-auth:21.0.8")
+    //Firebase
+    implementation (libs.firebase.auth.v2108)
 
 }

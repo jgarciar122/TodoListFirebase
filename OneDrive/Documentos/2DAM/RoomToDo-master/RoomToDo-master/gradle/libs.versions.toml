@@ -1,5 +1,6 @@
 [versions]
 agp = "8.6.0"
+firebaseAuthVersion = "21.0.8"
 junit = "4.13.2"
 junitVersion = "1.2.1"
 espressoCore = "3.6.1"
@@ -9,8 +10,10 @@ activity = "1.10.0"
 constraintlayout = "2.2.0"
 navigationRuntime = "2.8.5"
 navigationFragment = "2.8.5"
+firebaseAuth = "23.2.0"
 
 [libraries]
+firebase-auth-v2108 = { module = "com.google.firebase:firebase-auth", version.ref = "firebaseAuthVersion" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
@@ -20,6 +23,7 @@ activity = { group = "androidx.activity", name = "activity", version.ref = "acti
 constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 navigation-runtime = { group = "androidx.navigation", name = "navigation-runtime", version.ref = "navigationRuntime" }
 navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment", version.ref = "navigationFragment" }
+firebase-auth = { group = "com.google.firebase", name = "firebase-auth", version.ref = "firebaseAuth" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
